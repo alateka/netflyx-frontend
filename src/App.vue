@@ -1,31 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/login">Iniciar Sesión</router-link>
-  </nav>
+  <div class="m-1">
+    <nav class="flex justify-between bg-emerald-500 shadow-lg shadow-gray-400 rounded-lg">
+      <h1>.</h1>
+      <div class="flex justify-items-center">
+        <router-link 
+          class="m-3 p-3 text-white hover:text-green-700 hover:bg-green-300 rounded-lg duration-200" 
+          to="/">
+          Home
+        </router-link>
+        <router-link 
+          class="m-3 p-3 text-white hover:text-green-700 hover:bg-green-300 rounded-lg duration-200" 
+          to="/login">
+          Iniciar Sesión
+        </router-link>
+      </div>
+    </nav>
+  </div>
   <router-view/>
 </template>
+<script>
 
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  body {
+    background-color: #d5ffc8;
+  }
 </style>
