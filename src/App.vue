@@ -23,6 +23,6 @@
 </script>
 <style>
   body {
-    background-color: #d5ffc8;
+    background-color: #dbf8e6;
   }
 </style>
