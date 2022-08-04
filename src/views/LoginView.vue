@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div>
     <LoginForm msg="Iniciar Sesión"/>
   </div>
 </template>
