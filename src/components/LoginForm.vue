@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="mt-9 text-2xl text-center">{{msg}}</p>
+    <p class="mt-9 text-2xl text-center"><strong>{{msg}}</strong></p>
       <form class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-9 " action="#" method="post">
 
         <label class="md:col-start-2 lg:col-start-3 text-center mt-5" for="email">Correo Electrónico</label>
