@@ -1,6 +1,6 @@
 <template>
-  <div class="m-1">
-    <nav class="flex justify-between shadow-xl rounded-lg bg-gradient-to-r from-emerald-400 to-emerald-500">
+  <div class="fixed right-3 top-3">
+    <nav class="m-1 flex justify-between shadow-xl rounded-xl bg-gradient-to-r from-emerald-400 to-emerald-500">
       <img class="w-10" src="@/assets/logo.png" alt="logo">
       <div class="flex justify-items-center">
         <router-link 
@@ -18,11 +18,8 @@
   </div>
   <router-view/>
 </template>
-<script>
-
-</script>
 <style>
   body {
-    background-image: url('@/assets/images/Background.jpg');
-  }
+    background-image: linear-gradient(to right, rgb(240, 255, 249), rgb(231, 252, 231));
+    }
 </style>
