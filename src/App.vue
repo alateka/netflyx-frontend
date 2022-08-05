@@ -23,6 +23,6 @@
 </script>
 <style>
   body {
-    background-image: linear-gradient(to right, #f6fffc, #eafff0);
+    background-image: url('@/assets/images/Background.jpg');
   }
 </style>

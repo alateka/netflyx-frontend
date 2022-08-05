@@ -16,7 +16,7 @@
           type="password" name="password" placeholder="Introduce tu contraseña">
 
         <input class="shadow-lg cursor-pointer mt-9 md:col-start-2 sm:grid-cols-1 lg:col-start-3 m-3 p-3 text-white
-          bg-green-400 hover:text-green-700 hover:bg-green-300 rounded-lg duration-200" 
+          bg-green-400 hover:text-green-700 hover:bg-green-300 rounded-xl duration-200"
           type="submit" value="Enviar">
 
       </form>
