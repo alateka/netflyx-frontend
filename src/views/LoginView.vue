@@ -1,16 +1,21 @@
 <template>
-  <div>
+<br>
+<br>
+<br>
+<br>
     <LoginForm msg="Iniciar Sesión"/>
-  </div>
+    <Footer class="invisible md:visible lg:visible fixed bottom-0 w-full"></Footer>
 </template>
 
 <script>
 import LoginForm from '@/components/LoginForm.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'LoginView',
   components: {
-    LoginForm
+    LoginForm,
+    Footer
   }
 }
 </script>

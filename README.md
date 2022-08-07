@@ -15,5 +15,10 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Create config.json into src with this code:
+```
+{
+    "API_KEY": "Your API key",
+    "BASE_URL": "https://api.themoviedb.org/3/"
+}
+```
