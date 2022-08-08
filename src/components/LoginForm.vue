@@ -2,6 +2,11 @@
   <div>
     <p class="text-2xl text-center"><strong>{{msg}}</strong></p>
       <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-9">
+        
+        <div hidden id="login_alert" class="bg-red-200 p-3 border-2 border-red-300 rounded-xl text-red-500
+          md:col-start-2 lg:col-start-3" role="alert">
+          <p class="text-center">{{alertText}}</p>
+        </div>
 
         <label class="md:col-start-2 lg:col-start-3 text-center mt-5" for="email">Correo Electrónico</label>
         <input class="form-control px-3 py-1.5 border border-solid border-gray-300
@@ -18,7 +23,6 @@
         <input class="shadow-lg cursor-pointer mt-9 md:col-start-2 sm:grid-cols-1 lg:col-start-3 m-3 p-3 text-white
           bg-green-400 hover:text-green-700 hover:bg-green-300 rounded-xl duration-200"
           type="submit" @click="login" value="Iniciar Sesión">
-
       </div>
   </div>
 </template>
@@ -30,6 +34,11 @@ export default {
   name: 'LoginForm',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      alertText: ""
+    }
   },
   methods: {
     async login() {
@@ -48,12 +57,15 @@ export default {
         if ( result.data != "Error" ) {
           localStorage.token = result.data;
           this.$store.dispatch('setLoginAction', true);
+          document.getElementById("login_alert").hidden = true;
         } else {
           this.$store.dispatch('setLoginAction', false);
-          alert("Error");
+          this.alertText = "Error en los datos"
+          document.getElementById("login_alert").hidden = false;
         }
       } else {
-        alert("Rellene los campos");
+        this.alertText = "Rellene todos los campos"
+          document.getElementById("login_alert").hidden = false;
       }
     }
   }

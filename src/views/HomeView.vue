@@ -6,6 +6,7 @@
     <Presentation class="sm:col-span-0 lg:col-span-2"
       name="NETFLYX"
       description="Descubre las películas mas increibles y apasionantes en Netflyx"/>
+    <hr class="m-auto border-gray-300 shadow-xl w-4/5 border-2 sm:col-span-0 lg:col-span-2"/>
     <Banner v-for="movie in movies" :name="movie.title" :description="movie.overview" 
             :imgURL="'https://image.tmdb.org/t/p/w185_and_h278_bestv2'+movie.poster_path"/>
   </div>
