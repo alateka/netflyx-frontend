@@ -57,7 +57,7 @@ export default {
         if ( result.data != "Error" ) {
           localStorage.token = result.data;
           this.$store.dispatch('setLoginAction', true);
-          document.getElementById("login_alert").hidden = true;
+          window.location.replace("#/user");   
         } else {
           this.$store.dispatch('setLoginAction', false);
           this.alertText = "Error en los datos"
