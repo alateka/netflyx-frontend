@@ -1,7 +1,7 @@
 <template>
   <div class="fixed w-full">
-    <nav class="flex justify-between shadow-xl rounded-b-3xl bg-gradient-to-r from-emerald-400 to-emerald-500">
-      <img class="w-10" src="@/assets/logo.png" alt="logo">
+    <nav class="flex justify-between shadow-xl rounded-b-3xl bg-gradient-to-r from-emerald-400 to-emerald-500 font-bold">
+      <img class="w-10 ml-5" src="@/assets/images/play.svg" alt="logo">
       <div v-if="this.$store.getters.isLogin" class="flex">
         <router-link
           class="m-3 p-3 hover:shadow-xl text-white hover:text-green-700 hover:bg-green-300 rounded-lg duration-200" 
@@ -38,15 +38,13 @@
 <style>
   body {
     background-image: linear-gradient(to right, rgb(240, 255, 249), rgb(231, 252, 231));
-    }
-</style>
-<script>
-  export default {
-    mounted() {
-      if ( localStorage.token )
-        this.$store.dispatch('setLoginAction', true);
-      else
-        this.$store.dispatch('setLoginAction', false);
-    }
   }
-</script>
+  @font-face {
+    font-family: "Ubuntu-Light";
+    src: local("Ubuntu-Light"),
+    url(@/assets/Ubuntu-Light.ttf) format("truetype");
+  }
+  * {
+    font-family: "Ubuntu-Light";
+  }
+</style>

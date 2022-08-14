@@ -18,7 +18,8 @@ npm run build
 ### Create config.json into src with this code:
 ```
 {
-    "API_KEY": "Your API key",
-    "BASE_URL": "https://api.themoviedb.org/3/"
+    "THEMOVIEDB_API_KEY": "The themoviedb API key",
+    "BASE_URL_THEMOVIEDB": "https://api.themoviedb.org/3/",
+    "BASE_URL_BACKEND": "http://127.0.0.1"
 }
 ```

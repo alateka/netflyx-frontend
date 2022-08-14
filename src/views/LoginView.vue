@@ -16,11 +16,6 @@ export default {
   components: {
     LoginForm,
     Footer
-  },
-  mounted() {
-    if ( this.$store.getters.isLogin ) {
-        window.location.replace("#/user"); 
-    }
   }
 }
 </script>
