@@ -43,7 +43,9 @@ export default {
   },
   methods: {
     async login() {
+      
       let userData = {};
+
       userData.email = document.getElementById("email").value;
       userData.password = document.getElementById("password").value;
       
@@ -54,7 +56,9 @@ export default {
           "Content-Type": "application/json",
           }
         };
+
         const result = await axios.post(`${config.BASE_URL_BACKEND}/api/1/login`, userData, customConfig);
+
         if ( result.data != "Error" ) {
           localStorage.token = result.data;
           this.$store.dispatch('setLoginAction', true);
@@ -64,6 +68,7 @@ export default {
           this.alertText = "Error en los datos"
           document.getElementById("login_alert").hidden = false;
         }
+
       } else {
         this.alertText = "Rellene todos los campos"
           document.getElementById("login_alert").hidden = false;

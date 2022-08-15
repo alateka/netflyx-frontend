@@ -11,7 +11,7 @@
         <router-link
           class="m-3 p-3 hover:shadow-xl text-white hover:text-green-700 hover:bg-green-300 rounded-lg duration-200"
           to="/user">
-          Ver
+          Tus películas
         </router-link>
         <router-link
           class="m-3 p-3 hover:shadow-xl text-white hover:text-green-700 hover:bg-green-300 rounded-lg duration-200"

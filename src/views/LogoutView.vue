@@ -46,6 +46,7 @@ export default {
           "Content-Type": "application/json"
           }
         };
+        
     axios.get(`${config.BASE_URL_BACKEND}/api/1/check`, customConfig)
     .then((result) => {
       if (result.data == "OK") {
