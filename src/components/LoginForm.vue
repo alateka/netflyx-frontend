@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-3xl text-center"><strong>{{msg}}</strong></p>
+    <p class="text-3xl text-center my-9"><strong>{{msg}}</strong></p>
       <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-9">
         
         <div hidden id="login_alert" class="bg-red-200 p-3 border-2 border-red-300 rounded-xl text-red-500

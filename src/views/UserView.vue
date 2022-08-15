@@ -1,7 +1,4 @@
 <template>
-<br>
-<br>
-<br>
   <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
     <MovieAvailable v-for="movie in movies"
     :name="movie.name" 

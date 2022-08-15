@@ -1,7 +1,4 @@
 <template>
-    <br/>
-    <br/>
-    <br/>
     <div>
         <Play
             :name="name" 

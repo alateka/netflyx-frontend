@@ -1,7 +1,4 @@
 <template>
-<br>
-<br>
-<br>
   <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
     <Presentation class="sm:col-span-0 lg:col-span-2"
       name="NETFLYX"
@@ -41,7 +38,7 @@ export default {
           "Content-Type": "application/json"
           }
         };
-        
+
     axios.get(`${config.BASE_URL_BACKEND}/api/1/check`, customConfig)
     .then((result) => {
       if (result.data == "OK") {

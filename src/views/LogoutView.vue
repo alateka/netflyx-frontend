@@ -1,7 +1,4 @@
 <template>
-<br>
-<br>
-<br>
 <div class="flex justify-center md:mt-9">
   <div class="rounded-2xl bg-white shadow-lg border-b-8 border-emerald-300">
     <img class="m-auto mt-9" src="@/assets/images/logout.svg" alt="logout icon">
@@ -46,7 +43,7 @@ export default {
           "Content-Type": "application/json"
           }
         };
-        
+
     axios.get(`${config.BASE_URL_BACKEND}/api/1/check`, customConfig)
     .then((result) => {
       if (result.data == "OK") {

@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full">
+  <div>
     <nav class="flex justify-between shadow-xl rounded-b-3xl bg-gradient-to-r from-emerald-400 to-emerald-500 font-bold">
       <img class="w-10 ml-5" src="@/assets/images/play.svg" alt="logo">
       <div v-if="this.$store.getters.isLogin" class="flex">
