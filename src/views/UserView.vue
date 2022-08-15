@@ -7,7 +7,7 @@
     :name="movie.name" 
     :description="movie.description" 
     :posterURL="movie.poster"
-    :url="movie.url"/>
+    :id="movie.id"/>
   </div>
   <Footer/>
 </template>
@@ -55,10 +55,10 @@ export default {
           "Content-Type": "application/json"
           }
         };
-    axios.get(`${config.BASE_URL_BACKEND}/api/1/movies`, customConfig)
-    .then((result) => {
-      this.movies = result.data.movies;
-    })
+      axios.get(`${config.BASE_URL_BACKEND}/api/1/movies`, customConfig)
+      .then((result) => {
+        this.movies = result.data.movies;
+      })
   }
 }
 </script>

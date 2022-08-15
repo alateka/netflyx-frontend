@@ -4,6 +4,7 @@ import LoginView from "@/views/LoginView.vue"
 import AboutView from "@/views/AboutView.vue"
 import UserView from "@/views/UserView.vue"
 import LogoutView from "@/views/LogoutView.vue"
+import PlayView from "@/views/PlayView.vue"
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: "/logout",
     name: "logout",
     component: LogoutView
+  },
+  {
+    path: "/play",
+    name: "play",
+    component: PlayView
   }
 ]
 

@@ -1,11 +1,9 @@
 <template>
   <div class="flex m-9 border-solid border-2 rounded-2xl bg-white shadow-lg overflow-hidden 
-    flex-col md:flex-row lg:flex-row border-b-4 border-emerald-300">
-    <a :href="url" target="_blank" class="flex">
-      <img width="900" class="hover:scale-110 transition duration-300" :src="posterURL" alt="Movie image">
-    </a>
+    flex-col md:flex-row border-b-4 border-emerald-300">
+    <img class="hover:scale-110 transition duration-300 md:w-1/3" :src="posterURL" alt="Movie image">
     <div class="m-9">
-      <a target="_blank" :href="url"
+      <a :href="`#/play?id=${id}`"
         class="flex flex-row justify-center shadow-lg px-5 py-3 text-white bg-emerald-400
          hover:text-green-700 hover:bg-emerald-300 rounded-xl duration-200 font-bold">
          Reproducir
@@ -22,7 +20,7 @@ export default {
     name: String,
     description: String,
     posterURL: String,
-    url: String
+    id: String
   }
 }
 </script>
