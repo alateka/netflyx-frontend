@@ -1,4 +1,9 @@
-# netflyx
+# This project is just a hobby
+
+## Images:
+![Demo1](Demo1.jpg)
+![Demo2](Demo2.jpg)
+![Demo3](Demo3.jpg)
 
 ## Project setup
 ```
