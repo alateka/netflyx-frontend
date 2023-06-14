@@ -1,4 +1,4 @@
-# This project is just a hobby
+# This project is just an hobby
 
 ## Images:
 ![Demo1](Demo1.jpg)
